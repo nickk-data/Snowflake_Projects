@@ -10,7 +10,7 @@ The core architectural goal of this project was to establish a fully optimized, 
 
 ### 1. Source Extraction & Ingestion
 
-- Developed a Python-driven automation script leveraging the `snowflake-connector-python` library to dynamically extract source tables from a MotherDuck shared catalog (`data_jobs`)
+- Developed a Python-driven automation script [`md_to_sf.py`](/MotherDuck_to_Snowflake_Migration/md_to_sf.py) leveraging the `snowflake-connector-python` library to dynamically extract source tables from a MotherDuck shared catalog (`data_jobs`)
 - Configured local secure storage caching modules to natively resolve Snowflake's Multi-Factor Authentication (MFA/TOTP) gates, establishing an automated, secure session handshake
 - Separated infrastructure secrets from runtime logic by managing keys via a decoupled local environment layer (`.env`)
 
